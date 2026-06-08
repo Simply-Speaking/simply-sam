@@ -14,7 +14,7 @@ It's so good to have you here! If you are looking to connect, brainstorm, or jus
   {% for post in site.posts %}
     <li>
       <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-      <a href="./{{ post.url }}" class="post-link">{{ post.title }}</a>
+      <a href="{{ site.url }}/{{ post.url }}" class="post-link">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
